@@ -8,7 +8,7 @@ const DUMMY_DATA = [
     id: "e1",
     title: "Toilet Paper",
     amount: 94.12,
-    date: new Date(2020, 7, 14),
+    date: new Date(2022, 7, 14),
   },
   {
     id: "e2",
@@ -41,7 +41,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>Expense Tracker</h1>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses expenses={expenses} />
     </div>
