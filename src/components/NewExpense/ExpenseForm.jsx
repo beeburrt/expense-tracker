@@ -21,15 +21,12 @@ const ExpenseForm = (props) => {
 
   const submitHandler = (evt) => {
     evt.preventDefault();
-
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
-
     props.onSaveExpense(expenseData);
-
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
